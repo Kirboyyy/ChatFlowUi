@@ -14,7 +14,7 @@ export async function sendStreamingRequest() {
     const headers = {}
     httpHeaders.forEach((/** @type {{ name: string ; value: string; }} */ h) => headers[h.name] = h.value)
 
-    const values = Array.from(map.values());
+    const values = Array.from(map.values()).filter(e => !e.error);
     const relevantValues = values.splice(-historySize)
 
     const messages = relevantValues.map(m => ({ role: m.role, content: m.content }))
