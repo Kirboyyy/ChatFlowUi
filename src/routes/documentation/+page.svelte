@@ -2,9 +2,7 @@
 </script>
 
 <div class="max-w-4xl mx-auto py-12 px-6">
-    <h1 class="text-3xl font-semibold mb-6">
-        API Specification for Developers
-    </h1>
+    <h1 class="text-3xl font-semibold mb-6">API Specification</h1>
     <p class="mb-8 text-lg">
         For developers looking to implement the backend for OmniChatUi, here’s
         how the expected POST request should be structured. The request will be
@@ -18,20 +16,20 @@
     </p>
 
     <h2 class="text-xl font-semibold mb-4">POST Request Structure</h2>
-    <pre class="bg-code px-4 rounded-md text-sm mb-8">
-<code class="whitespace-pre-wrap">
-POST Backend URL
-Content-Type: application/json
-&lbrace;
-    "model": "your-model-name", 
-    "messages": [
-        &lbrace; "role": "system", "content": "your system prompt here" &rbrace;,
-        &lbrace; "role": "user", "content": "user query" &rbrace;
-        // ...
-    ],
-    "stream": true 
-}
-</code>
+    <pre class="bg-code px-4 rounded-md text-sm mb-8 overflow-x-auto">
+        <code class="whitespace-pre-wrap">
+        POST Backend URL
+        Content-Type: application/json
+        &lbrace;
+            "model": "your-model-name", 
+            "messages": [
+                &lbrace; "role": "system", "content": "your system prompt here" &rbrace;,
+                &lbrace; "role": "user", "content": "user query" &rbrace;
+                // ...
+            ],
+            "stream": true 
+        }
+        </code>
     </pre>
 
     <hr />
@@ -58,7 +56,7 @@ Content-Type: application/json
         <code class="text-blue-600 font-semibold">getText()</code>
         method. It returns:
     </p>
-    <pre class="bg-code p-2 rounded mt-2"><code
+    <pre class="bg-code p-2 rounded my-2"><code
             >data.choices[0].delta.content</code
         ></pre>
     <p class="mb-4 text-lg">
@@ -71,7 +69,7 @@ Content-Type: application/json
     <p class="mb-4 text-lg">
         <strong>Description:</strong> The <strong>SpringAI</strong> strategy
         integrates with
-        <code class="text-blue-600 font-semibold"
+        <code class="text-blue-600 font-semibold break-all"
             >org.springframework.ai.chat.model.ChatResponse</code
         >, offering seamless compatibility with Spring-AI applications. This
         option is ideal for applications built within the Spring framework,
@@ -85,7 +83,7 @@ Content-Type: application/json
         <code class="text-blue-600 font-semibold">getText()</code>
         method:
     </p>
-    <pre class="bg-code p-2 rounded mt-2"><code>data.result.output.content</code
+    <pre class="bg-code p-2 rounded my-2"><code>data.result.output.content</code
         ></pre>
     <p class="mb-4 text-lg">
         <strong>Streaming Capabilities:</strong> Just like the OpenAiStrategy, this

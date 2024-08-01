@@ -30,7 +30,7 @@
 
 <!-- Main Settings Panel -->
 <div
-    class="settings-panel fixed top-0 right-0 h-full w-full md:w-3/5 bg-background-secondary shadow-lg p-4 text-text-primary z-10"
+    class="settings-panel fixed top-0 right-0 h-full w-full md:w-3/5 bg-background-secondary shadow-lg p-4 text-text-primary z-10 overflow-scroll"
     class:open={$isSettingsOpen}
     class:closed={!$isSettingsOpen}
 >

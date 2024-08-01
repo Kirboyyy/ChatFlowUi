@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<div class="max-w-4xl mx-auto py-12 px-6">
+<div class="max-w-4xl mx-auto py-12 px-6 break-normal">
     <h1 class="text-4xl font-bold mb-8">💬 OmniChatUi</h1>
     <p class="mb-8 text-lg">
         Welcome to <b>OmniChatUi</b>, a flexible and universal chatbot interface
@@ -20,11 +20,13 @@
         current focus on Spring AI, prompted by an upcoming talk on chatbots at
         a local meetup, we've also embraced the dominance of OpenAI's API. As a
         result, our platform supports both Spring AI's
-        <code>org.springframework.ai.chat.model.ChatResponse</code> and the
-        standardized OpenAI request format, allowing developers to utilize the
-        service without needing a dedicated backend.<br /><br />Our mission is
-        to empower developers by offering a streamlined yet powerful UI that can
-        be easily customized and extended to cater to individual needs.
+        <code class="break-all"
+            >org.springframework.ai.chat.model.ChatResponse</code
+        >
+        and the standardized OpenAI request format, allowing developers to utilize
+        the service without needing a dedicated backend.<br /><br />Our mission
+        is to empower developers by offering a streamlined yet powerful UI that
+        can be easily customized and extended to cater to individual needs.
     </p>
 
     <h2 class="text-3xl font-semibold mb-6">Key Features</h2>
