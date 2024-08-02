@@ -34,7 +34,7 @@
             >Documentation</a
         >
         or visit our
-        <a class="text-blue-500" href="github.com/kirboyyy/ChatFlowUi">GitHub</a
+        <a class="text-blue-500" href="https://github.com/Kirboyyy/ChatFlowUi">GitHub</a
         >.
     </p>
 </div>
