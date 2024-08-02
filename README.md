@@ -1,6 +1,8 @@
-# 💬 OmniChatUi
+# 💬 ChatFlowUi
 
-Welcome to OmniChatUi, a universal chatbot interface built with Svelte. OmniChatUi is designed to be a flexible, developer-friendly UI that integrates seamlessly with various AI backends. Whether you're building internal prototypes or deploying a production-ready chat application, OmniChatUi provides a minimal yet powerful interface that you can easily customize and extend.
+Welcome to the **ChatFlowUi** project! This initiative is specifically designed for developers who want to test and validate the logic of their LLM (Large Language Model) integrations rather than creating end-product solutions. Our goal is to streamline the development process, allowing you to focus on refining your logic and experimenting with various scenarios while we handle the presentation aspect.
+
+**ChatFlowUi** provides a lightweight and flexible user interface that facilitates the quick configuration and connection with LLM backends. Whether you're designing complex interactions or simple question-answering workflows, ChatFlowUi enables you to efficiently conduct tests, troubleshoot, and optimize your LLM applications.
 
 ## Table of Contents
 
@@ -20,11 +22,11 @@ Welcome to OmniChatUi, a universal chatbot interface built with Svelte. OmniChat
 
 ## Installation
 
-To get started with OmniChatUi, follow these steps:
+To get started with **ChatFlowUi**, follow these steps:
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/Kirboyyyy/OmniChatUi.git
+    git clone https://github.com/Kirboyyyy/ChatFlowUi.git
     cd OmniChatUi
     ```
 2. **Install Dependencies**:
@@ -38,7 +40,7 @@ To get started with OmniChatUi, follow these steps:
         npm run dev
     ```
 
-This will start a local server and you can view OmniChatUi in your browser at http://localhost:3000.
+This will start a local server and you can view ChatFlowUi in your browser at http://localhost:5173.
 
 ## Usage
 
@@ -47,7 +49,6 @@ This will start a local server and you can view OmniChatUi in your browser at ht
 OmniChatUi is designed to be highly configurable:
 
 - **Theme Customization**: Update the tailwind.config.js file to customize colors and styling.
-- **Message Handling**: Extend the message handling logic to integrate with your AI backend.
 
 ## Contributing
 
