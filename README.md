@@ -27,7 +27,7 @@ To get started with **ChatFlowUi**, follow these steps:
 1. **Clone the Repository**:
     ```bash
     git clone https://github.com/Kirboyyyy/ChatFlowUi.git
-    cd OmniChatUi
+    cd ChatFlowUi
     ```
 2. **Install Dependencies**:
     Ensure you have Node.js and npm installed. Then, run:
@@ -46,13 +46,13 @@ This will start a local server and you can view ChatFlowUi in your browser at ht
 
 ### Configuration
 
-OmniChatUi is designed to be highly configurable:
+ChatFlowUi is designed to be highly configurable:
 
 - **Theme Customization**: Update the tailwind.config.js file to customize colors and styling.
 
 ## Contributing
 
-We welcome contributions to OmniChatUi! To contribute:
+We welcome contributions to ChatFlowUi! To contribute:
 
 1. **Fork the Repository**:
     
