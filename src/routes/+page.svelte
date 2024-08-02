@@ -1,9 +1,9 @@
 <script>
-    import Chat from "../components/Chat.svelte";
+    import Chat from "../components/Chat/Chat.svelte";
 </script>
 
 <svelte:head>
-    <title>💬 OmniChatUi</title>
+    <title>💬 ChatFlowUi</title>
 </svelte:head>
 
 <main class="flex flex-col items-center justify-center p-4">

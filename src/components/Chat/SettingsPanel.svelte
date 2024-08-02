@@ -1,5 +1,9 @@
 <script>
-    import { settings, strategies, isSettingsOpen } from "../stores/settings";
+    import {
+        settings,
+        strategies,
+        isSettingsOpen,
+    } from "../../stores/settingsStore";
 
     let localSettings = { ...$settings };
 
@@ -117,10 +121,10 @@
         >
     </div>
 
-    <!-- Response Strategy Setting -->
+    <!-- Response Selector Setting -->
     <div class="mb-4">
         <label class="block mb-2 font-semibold" for="strategy"
-            >Response Strategy</label
+            >Response Selector</label
         >
         <select
             class="w-full p-2 border border-border-secondary rounded bg-background-tertiary text-text-primary"

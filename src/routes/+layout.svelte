@@ -1,7 +1,7 @@
 <script>
-    import Header from "../components/Header.svelte";
     import "../app.css";
-    import SettingsPanel from "../components/SettingsPanel.svelte";
+    import SettingsPanel from "../components/Chat/SettingsPanel.svelte";
+    import Header from "../components/Layout/Header.svelte";
 </script>
 
 <div class="bg-background-primary text-text-primary min-h-screen flex flex-col">

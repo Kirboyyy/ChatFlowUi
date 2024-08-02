@@ -2,7 +2,7 @@
     // @ts-nocheck
 
     import { createEventDispatcher } from "svelte";
-    import { isGenerating } from "../stores/messages";
+    import { isGenerating } from "../../stores/messageStore";
 
     let input = "";
     let rows = 1;

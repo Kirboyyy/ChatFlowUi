@@ -1,7 +1,7 @@
 
 import { get } from "svelte/store";
-import { settings } from "../stores/settings";
-import { messageMap } from "../stores/messages";
+import { settings } from "../stores/settingsStore";
+import { messageMap } from "../stores/messageStore";
 
 
 export async function sendStreamingRequest() {

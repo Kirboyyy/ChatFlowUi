@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>💬 OmniChatUi: About</title>
+    <title>💬 ChatFlowUi: About</title>
 </svelte:head>
 
 <slot></slot>

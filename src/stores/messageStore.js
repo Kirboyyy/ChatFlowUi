@@ -1,6 +1,6 @@
 import { get, writable } from 'svelte/store';
 import { sendStreamingRequest } from '../services/requestService';
-import { getStrategyInstance, settings } from './settings';
+import { getStrategyInstance, settings } from './settingsStore';
 
 /**
  * @typedef {Object} Message

@@ -1,0 +1,59 @@
+.documentation h1, 
+.documentation h2, 
+.documentation h3, 
+.documentation h4, 
+.documentation h5, 
+.documentation h6 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.documentation h1 {
+    font-size: 2rem; /* Tailwind's text-3xl */
+    color: #ffffff; /* Tailwind's white */
+}
+
+.documentation h2 {
+    font-size: 1.75rem; /* Tailwind's text-2xl */
+}
+
+.documentation h3 {
+    font-size: 1.5rem; /* Tailwind's text-xl */
+}
+
+.documentation h4 {
+    font-size: 1.25rem; /* Tailwind's text-lg */
+}
+
+.documentation p {
+    margin: 1rem 0;
+    line-height: 1.6;
+}
+
+.documentation a {
+    color: #3b82f6; /* Tailwind's blue-500 */
+    text-decoration: none;
+}
+
+.documentation a:hover {
+    text-decoration: underline;
+}
+
+.documentation ul, ol {
+    padding-left: 1.5rem; /* Tailwind's pl-6 */
+    list-style-type: inherit;
+}
+
+.documentation pre {
+    background-color: #1A1A1A; 
+    border-radius: 0.375rem; /* Tailwind's rounded-md */
+    padding: 1rem; /* Tailwind's p-4 */
+    overflow-x: auto;
+    margin-bottom: 1rem;
+}
+
+.documentation code {
+    background-color: #1A1A1A;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.375rem; /* Tailwind's rounded-md */
+}

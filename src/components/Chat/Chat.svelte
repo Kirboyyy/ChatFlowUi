@@ -1,10 +1,13 @@
 <script>
     import { onDestroy } from "svelte";
-    import Message from "./Message.svelte";
+    import Message from "./Message/Message.svelte";
     import MessageInput from "./MessageInput.svelte";
-    import { messageMap } from "../stores/messages";
-    import { sendMessage, disconnect } from "../stores/messages";
-    import EmptyMessages from "./EmptyMessages.svelte";
+    import {
+        sendMessage,
+        disconnect,
+        messageMap,
+    } from "../../stores/messageStore";
+    import EmptyState from "./EmptyState.svelte";
 
     onDestroy(() => {
         disconnect();
@@ -20,7 +23,7 @@
 
 <div class="chat-container flex flex-col max-w-screen-xl w-full p-4 mb-20">
     {#if $messageMap.size === 0}
-        <EmptyMessages on:send={handleSend} />
+        <EmptyState on:send={handleSend} />
     {:else}
         {#each $messageMap.values() as message (message)}
             <Message {message} />
