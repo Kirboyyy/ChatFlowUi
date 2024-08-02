@@ -1,7 +1,10 @@
+/*
 import fs from 'fs';
 import path from 'path';
-
+*/
 export async function GET() {
+    /* Cloudflare doesn't support filesystem, so we have to use a static link for now.
+    
     const docsDirectory = path.join(process.cwd(), 'static', 'documentation');
 
     try {
@@ -20,4 +23,15 @@ export async function GET() {
             status: 500
         });
     }
+
+    */
+
+    const files = ["API-Specification.md", "Settings.md"];
+    return new Response(JSON.stringify(files), {
+        status: 200,
+        headers: {
+            'Content-Type': 'application/json'
+        }
+
+    })
 }
