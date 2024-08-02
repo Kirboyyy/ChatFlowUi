@@ -32,7 +32,7 @@ Customize your ChatFlowUi experience by configuring the settings below.
 ## Response Selector
 - **Description:** Choose the appropriate response stream property to extract the desired content based on the selected model. This feature supports predefined options for specific LLM providers. User input for custom properties is not permitted.
 - **Preselected Options:**
-  - **SpringAI:** `data.choices[0].delta.content`
+  - **SpringAI:** `data.result.output.content`
   - **OpenAI:** `choices[0].message.content`
   
 Select the model to automatically use the corresponding response path.eful for ensuring that your application processes only the relevant part of the response.
