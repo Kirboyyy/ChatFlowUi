@@ -1,6 +1,7 @@
 import { get, writable } from 'svelte/store';
 import { sendStreamingRequest } from '../services/requestService';
 import { getStrategyInstance, settings } from './settingsStore';
+import {SpringAiStrategy} from "../strategies/springAiStrategy.js";
 
 /**
  * @typedef {Object} Message
@@ -80,7 +81,8 @@ export async function sendMessage(message) {
  * @param {Strategy} strategy
  */
 function processChunk(id, chunk, strategy) {
-    const events = chunk.split('\n\n');
+    const events = chunk.split('/n/n');
+    console.log(events.length)
     events.forEach(event => {
         if (event) {
             if (!event.includes("{")) {
@@ -89,7 +91,6 @@ function processChunk(id, chunk, strategy) {
             }
             const parsedEvent = JSON.parse(event.slice(event.indexOf('{')));
             const text = strategy.getText(parsedEvent)
-            console.log(parsedEvent)
 
             messageMap.update(map => {
                 if (map.has(id)) {

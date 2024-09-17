@@ -24,10 +24,6 @@ export async function sendStreamingRequest() {
     return await fetch(backendUrl, {
         method: 'POST',
         headers: headers,
-        body: JSON.stringify({
-            model: modelName,
-            messages: messages,
-            stream: true
-        })
+        body: relevantValues[relevantValues.length-1].content
     });
 }
